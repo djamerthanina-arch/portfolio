@@ -1,0 +1,150 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #ffffff;
+    color: #252525;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 10%;
+    border-bottom: 1px solid #eeeeee;
+}
+
+header h2 {
+    color: #7456d8;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 25px;
+}
+
+nav a:hover {
+    color: #7456d8;
+}
+
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: #f7f5ff;
+}
+
+.intro {
+    color: #7456d8;
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin: 20px 0;
+}
+
+.hero h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 25px;
+    background: #7456d8;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+section {
+    padding: 75px 10%;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+#apropos p {
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.project {
+    text-decoration: none;
+    color: #252525;
+    padding: 25px;
+    border: 1px solid #eeeeee;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 25px #ddd;
+}
+
+.project-image {
+    background: #f3f0ff;
+    padding: 45px;
+    font-size: 55px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    margin-bottom: 12px;
+}
+
+.project p {
+    margin-bottom: 15px;
+}
+
+.project span {
+    color: #7456d8;
+}
+
+#contact {
+    background: #f7f5ff;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #777;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav a {
+        margin: 8px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
+}
